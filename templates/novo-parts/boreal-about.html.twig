@@ -1,0 +1,34 @@
+{#<section id="about" class="about">
+  <div class="container-fluid">
+
+      <!-- Primeiro o nome da view (se for nome composto usar underscore)
+              como ta no drupal e depois o nome do bloco em advance option da view-->
+                 {{ drupal_view('noticia_informes', 'block_noticia_informes') }}
+  </div>
+</section><!-- End About Section -->
+#}
+
+<!-- ======= About Section ======= -->
+			<section id="about" class="about">
+				<div class="container" data-aos="fade-up">
+
+					<div class="section-title">
+						<h2>Sobre Nós</h2>
+						{#<h2>{{ drupal_field('title', 'node', 7) }}</h2>#}
+					</div>
+
+					<div class="row">
+						<div class="col-lg-5 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+							{{ drupal_view('views_sobre', 'image') }}
+						</div>
+						<div class="col-lg-7 pt-4 pt-lg-0 order-2 order-lg-1 content">
+							{{ drupal_view('views_sobre', 'corpo') }}
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<!-- End About Section -->
+
+
+

@@ -1,0 +1,36 @@
+<!-- Section: Magazine v.2 -->
+			<section id="news" class="about section-bg" style="margin-top:-50px;">
+				<div
+					class="container" data-aos="fade-up">
+					<!-- Section heading -->
+					<div class="section-title">
+						<h2>
+							<i class="icofont-news"></i>
+							{{ 'Notícias'|t }}</h2>
+					</div>
+
+					<!-- Section description -->
+					<!-- Grid row -->
+					<div
+						class="row">
+						<!-- Grid column -->
+						<div class="col-lg-6 col-md-12">
+							{{ drupal_view('views_noticias', 'destaque') }}
+						</div>
+						<!-- Grid column -->
+						<!-- Grid column -->
+						<div class="col-lg-6 col-md-12">
+							{{ drupal_view('views_noticias', 'principal') }}
+
+						</div>
+						<!--Grid column-->
+					</div>
+					<!-- Grid row -->
+					<div class="float-right">
+
+							<a href="../noticias" id="h6-noticias" class="btn btn-primary">{{ 'Todas as Notícias'|t }}</a>
+
+					</div>
+				</div>
+			</section>
+			<!-- Section: Magazine v.2 -->
